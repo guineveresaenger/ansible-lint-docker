@@ -12,9 +12,9 @@ variables:
   DOCKER_DRIVER: overlay2
   IMAGE_PROD_NAME: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME
   REGISTRY: quay.io
-  IMAGE_NAME: ansible-lint
+  IMAGE_NAME: ansible-lint-container
   REGISTRY_USER: your_org # we set this to override to samsung_cnct in gitlab Group Variables
-  ROBOT_ACCOUNT: ansible_lint_rw
+  ROBOT_ACCOUNT: ansible_lint_container_rw
 # Create a Gitlab Secret Variable called REGISTRY_PASSWORD and assign it the value of the registry robot docker login password.
 # DO NOT PASTE THIS PASSWORD HERE.
 
